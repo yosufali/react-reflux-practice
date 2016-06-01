@@ -1,6 +1,21 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var List = require('./components/List.jsx');
+var NavBar = require('./components/nav/NavBar.jsx');
 
-ReactDOM.render(<List />, document.getElementById('ingredients'));
+var navLinks = [
+	{
+		title: "Home",
+		href: "#"
+	},
+	{
+		title: "Courses",
+		href: "#"
+	},
+	{
+		title: "Blog",
+		href: "#"
+	}
 
+];
+
+ReactDOM.render(<NavBar bgColor="white" titleColor="Blue" linkColor="" navData={navLinks}/>, document.getElementById('nav'));
